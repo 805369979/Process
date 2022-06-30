@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 @Slf4j
 public class ProcessInstance<C extends Context, R> {
     /**
-     * 用于生成一个 Context
+     * 用于生成一个流程 Context
      */
     private Supplier<C>    contextBuilder;
     /**

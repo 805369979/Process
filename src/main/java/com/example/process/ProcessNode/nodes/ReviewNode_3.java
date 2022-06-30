@@ -14,6 +14,7 @@ public class ReviewNode_3 extends Node<ReviewContext> {
         double quantity = context.getQuantity();
 
         if (quantity <= 0) {
+            System.out.println("推演供应量不够");
             return;
         }
         quantity = quantity * 0.8;

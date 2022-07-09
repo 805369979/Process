@@ -8,10 +8,8 @@ import java.util.Map;
 
 @Component
 @ScheduleCode(code = "Task1")
-@EnableScheduling
 public class Task1 extends TaskHandler{
 
-    @Scheduled(cron = "")
     @Override
     public boolean handle(InstanceTask instanceTask, Context context) {
         Map<String, Object> param = context.getParam();

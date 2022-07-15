@@ -7,7 +7,10 @@
     <groupId>com.atguigu</groupId>
     <artifactId>boot-01-helloworld</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>ali</module>
+    </modules>
+    <packaging>pom</packaging>
 
 
     <parent>
@@ -23,12 +26,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
             </dependency>
-            <dependency>
-                <groupId>org.springframework.experimental</groupId>
-                <artifactId>spring-native</artifactId>
-                <version>${spring-native.version}</version>
-            </dependency>
 
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.14</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-collections4</artifactId>
@@ -74,11 +77,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
             </dependency>
-            <dependency>
-                <groupId>org.springframework.experimental</groupId>
-                <artifactId>spring-native</artifactId>
-                <version>${spring-native.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -102,12 +100,6 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>org.testcontainers</groupId>
-                <artifactId>junit-jupiter</artifactId>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <optional>true</optional>
@@ -115,11 +107,6 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.testcontainers</groupId>
-                <artifactId>junit-jupiter</artifactId>
                 <scope>test</scope>
             </dependency>
         <dependency>

@@ -23,7 +23,7 @@ public class Compare2 implements Listener {
 
     @Scheduled(cron = "*/1 * * * * ?") //每五秒钟执行一次
     @Override
-    public void receive() {
+    public void action() {
         String receiveData ;
         if (QueueChannel.info.size()<=0){
             return;
